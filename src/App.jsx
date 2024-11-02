@@ -8,6 +8,7 @@ const App = () => {
       </h1>
       <div className="bg-primary text-secondary text-xl">hello</div>
       <div className=" text-secondary font-poppins font-semibold text-4xl">hello</div>
+      <div className=" text-primary font-semibold text-4xl">hello</div>
     </>
   )
 }
