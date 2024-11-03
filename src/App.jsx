@@ -9,6 +9,7 @@ import MyTargetedAudience from "./pages/user/MyTargetedAudience";
 import MySavedWork from "./pages/user/MySavedWork";
 import ClarisonRESupport from "./pages/user/ClarisonRESupport";
 import AccountSetting from "./pages/user/AccountSetting";
+import UpdateMySchedule from "./pages/user/UpdateMySchedule";
 
 const App = () => {
   return (
@@ -23,6 +24,12 @@ const App = () => {
           <Route path="my-saved-work" element={<MySavedWork />} />
           <Route path="clarison-support" element={<ClarisonRESupport />} />
           <Route path="account-setting" element={<AccountSetting />} />
+
+          {/* UpdateMySchedule Route */}
+          <Route
+            path="my-schedule-flyer/update"
+            element={<UpdateMySchedule />}
+          />
         </Route>
 
         {/* User Routes End  */}

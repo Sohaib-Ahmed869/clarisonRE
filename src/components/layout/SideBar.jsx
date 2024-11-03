@@ -12,7 +12,10 @@ import { ImCross } from "react-icons/im";
 
 const SideBar = ({ open, handleToggle }) => {
   return (
-    <div className={`w-full p-4 h-screen bg-[url('/src/assets/sidebar/sidebar-image.png')] bg-cover bg-center`}>
+    <div
+      className={`w-full p-4 h-screen bg-[url('/src/assets/sidebar/sidebar-image.png')] z-50 bg-cover bg-center`}
+    >
+      {/* logo image  */}
       <div className="flex w-full items-center justify-between">
         <img src={logo} className="w-44 lg:w-56 pl-5 py-5 lg:py-5" alt="logo" />
 
@@ -25,112 +28,133 @@ const SideBar = ({ open, handleToggle }) => {
       </div>
 
       {/* NavLinks with conditional image filter */}
-      <NavLink
-        onClick={handleToggle}
-        to="/user/dashboard"
-      >
+      <NavLink onClick={handleToggle} to="/user/dashboard">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image1}
               alt="Dashboard"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert ' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert " : ""
+              }`}
             />
             <h1 className="ml-3">Dashboard</h1>
           </div>
         )}
       </NavLink>
 
-      <NavLink
-        onClick={handleToggle}
-        to="/user/create-send-flyer"
-      >
+      <NavLink onClick={handleToggle} to="/user/create-send-flyer">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image2}
               alt="Create & Send Flyer"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert" : ""
+              }`}
             />
             <h1 className="ml-3">Create & Send Flyer</h1>
           </div>
         )}
       </NavLink>
 
-      <NavLink
-        onClick={handleToggle}
-        to="/user/my-schedule-flyer"
-      >
+      <NavLink onClick={handleToggle} to="/user/my-schedule-flyer">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image3}
               alt="My Schedule"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert" : ""
+              }`}
             />
-            <h1 className="ml-3">My Schedule</h1>
+            <h1 className="ml-3">My Schedule Flyer</h1>
           </div>
         )}
       </NavLink>
 
-      <NavLink
-        onClick={handleToggle}
-        to="/user/my-targeted-audience"
-      >
+      <NavLink onClick={handleToggle} to="/user/my-targeted-audience">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image4}
               alt="My Targeted Audience"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert" : ""
+              }`}
             />
             <h1 className="ml-3">My Targeted Audience</h1>
           </div>
         )}
       </NavLink>
 
-      <NavLink
-        onClick={handleToggle}
-        to="/user/my-saved-work"
-      >
+      <NavLink onClick={handleToggle} to="/user/my-saved-work">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image5}
               alt="My Saved Work"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert" : ""
+              }`}
             />
             <h1 className="ml-3">My Saved Work</h1>
           </div>
         )}
       </NavLink>
 
-      <NavLink
-        onClick={handleToggle}
-        to="/user/clarison-support"
-      >
+      <NavLink onClick={handleToggle} to="/user/clarison-support">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image6}
               alt="ClarisonRE Support"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert" : ""
+              }`}
             />
             <h1 className="ml-3">ClarisonRE Support</h1>
           </div>
         )}
       </NavLink>
 
-      <NavLink
-        onClick={handleToggle}
-        to="/user/account-setting"
-      >
+      <NavLink onClick={handleToggle} to="/user/account-setting">
         {({ isActive }) => (
-          <div className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${isActive ? "bg-secondary text-white" : "text-[#737791]"}`}>
+          <div
+            className={`flex items-center  px-4 py-4 my-2 rounded-2xl w-full transition-colors duration-300 ${
+              isActive ? "bg-secondary text-white" : "text-[#737791]"
+            }`}
+          >
             <img
               src={image7}
               alt="Account Setting"
-              className={`w-5 h-5 ${isActive ? 'filter brightness-0 invert' : ''}`}
+              className={`w-5 h-5 ${
+                isActive ? "filter brightness-0 invert" : ""
+              }`}
             />
             <h1 className="ml-3">Account Setting</h1>
           </div>
