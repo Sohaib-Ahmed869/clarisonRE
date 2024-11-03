@@ -18,6 +18,7 @@ const UserLayout = () => {
       <div className={`fixed top-0 left-0 sm:w-96 h-full bg-white transition-transform duration-300 transform ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 lg:static lg:block`}>
         <SideBar open={sidebarOpen} handleToggle={handleToggle} />
       </div>
+      {/* Hamburger menu shown on small screens */}
           <GiHamburgerMenu
             onClick={handleToggle}
             className={`text-gray-800 text-2xl z-40 lg:hidden ${sidebarOpen ? 'hidden' : 'block'}`}
@@ -25,7 +26,6 @@ const UserLayout = () => {
       <div className="flex flex-col min-h-screen w-full bg-[#fafbfd]">
         <div className="flex w-full h-20 bg-white">
           <Header />
-          {/* Hamburger menu shown on small screens */}
         </div>
         <div className="h-full w-full">
           Admin Dashboard
