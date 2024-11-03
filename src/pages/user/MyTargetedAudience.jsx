@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TargetedAudience = () => {
+const MyTargetedAudience = () => {
   return (
     <div>
       my targeted audience
@@ -8,4 +8,4 @@ const TargetedAudience = () => {
   )
 }
 
-export default TargetedAudience
+export default MyTargetedAudience

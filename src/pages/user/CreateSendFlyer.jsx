@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CreateSendFile = () => {
+const CreateSendFlyer = () => {
   return (
     <div>
       create and send file
@@ -8,4 +8,4 @@ const CreateSendFile = () => {
   )
 }
 
-export default CreateSendFile
+export default CreateSendFlyer
